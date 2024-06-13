@@ -361,3 +361,12 @@ git commit -m "refactor: simplified conditions"
 git add .
 git commit -m "fix: displayed number of guessses on last prompt"
 git status
+git status
+git ..
+cd ..
+mkdir files
+cp number_guessing_game/number_guess.sh files/
+pg_dump -cC --inserts -U freecodecamp number_guess > files/number_guess.sql
+ls --color=auto files/
+git status
+git add .
